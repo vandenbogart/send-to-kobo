@@ -10,13 +10,15 @@ MAX_FILE_SIZE_BYTES = "104857600"
 
 [[kv_namespaces]]
 binding = "SESSIONS"
+id = "1ee2351e9cd44676a734542d089d5da2"
 
 [[r2_buckets]]
 binding = "FILES"
+bucket_name = "send-to-kobo-files"
 
 [[routes]]
 pattern = "send.nuc.ink"
 custom_domain = true
 
 [triggers]
-crons = ["*/15 * * * *"]
+crons = [ "*/15 * * * *" ]
