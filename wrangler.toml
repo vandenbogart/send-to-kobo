@@ -1,0 +1,22 @@
+name = "send-to-kobo"
+main = "src/worker.js"
+compatibility_date = "2026-06-01"
+
+[observability]
+enabled = true
+
+[vars]
+MAX_FILE_SIZE_BYTES = "104857600"
+
+[[kv_namespaces]]
+binding = "SESSIONS"
+
+[[r2_buckets]]
+binding = "FILES"
+
+[[routes]]
+pattern = "send.nuc.ink"
+custom_domain = true
+
+[triggers]
+crons = ["*/15 * * * *"]
