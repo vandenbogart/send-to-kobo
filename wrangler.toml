@@ -20,5 +20,9 @@ bucket_name = "send-to-kobo-files"
 pattern = "send.nuc.ink"
 custom_domain = true
 
+[[routes]]
+pattern = "kobo.nuc.ink"
+custom_domain = true
+
 [triggers]
 crons = [ "*/15 * * * *" ]

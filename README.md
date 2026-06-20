@@ -26,7 +26,10 @@ Then open:
 
 ## Deploy to Cloudflare
 
-This project is configured to deploy at `https://send.nuc.ink`.
+This project is configured to deploy at:
+
+- `https://kobo.nuc.ink`
+- `https://send.nuc.ink`
 
 ```sh
 npm run deploy
